@@ -26,6 +26,8 @@ while situacao:
     if op==2:
         situacao=False
 
+    #print "Hello World"
+
 
 
 
