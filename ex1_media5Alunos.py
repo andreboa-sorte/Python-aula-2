@@ -1,5 +1,8 @@
 class MadiaAluno():
-
+    #teste GIT
+    #git add
+    #git commit -m ''
+    #git push
     def cacula_media(self):
 
             nota1=float(input("digite a primeira nota do aluno: "))
@@ -26,7 +29,6 @@ while situacao:
     if op==2:
         situacao=False
 
-    #print "Hello World"
 
 
 
