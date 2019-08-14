@@ -5,14 +5,14 @@
 #  a mulher mais nova, e o produto das idades do homem mais novo com a mulher mais velha.
 class Idade():
    def dois_m_w(self):
-       homen2=0
-       homen1=0
-       Mnovo=0
-       Wnova=0
-       mulher1=0
-       mulher2=0
-       Widade=0
-       Midade=0
+        homen2=0
+        homen1=0
+        Mnovo=0
+        Wnova=0
+        mulher1=0
+        mulher2=0
+        Widade=0
+        Midade=0
         situacao=True
         while situacao:
             homen1 = int(input("digite a idade do primeiro homeme: "))
@@ -33,15 +33,29 @@ class Idade():
             mulher2 = int(input("digite a idade da segunda mulher, DIFERENTE DA PRIMEIRA: "))
             if mulher1!=mulher2:
                 situacao2=False
-        elif mulher1>mulher2:
+        if mulher1>mulher2:
             Widade=mulher1
             Wnova=mulher2
-            elif mulher2>mulher1:
-                    Widade=mulher2
-                    Wnova = mulher1
+        elif mulher2>mulher1:
+            Widade=mulher2
+            Wnova = mulher1
 
-                    soma1=Midade+Wnova
-                    soma2=Widade+Mnovo
+        soma1=Midade+Wnova
+        soma2=Widade+Mnovo
+        print("a soma das idades do homem mais velho com"
+              "a mulher mais nova é: ",soma1)
+        print("e o produto das idades do homem mais novo com "
+              "a mulher mais velha é: ",soma2)
+chama=Idade()
+menu=True
+while menu:
+    op=int(input("1- calcular as idades\n"
+                 "2- sair\n"
+                 "opção: "))
+    if op==1:
+        chama.dois_m_w()
+    elif op==2:
+        menu=False
 
 
 
