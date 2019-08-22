@@ -6,20 +6,20 @@
 # uma lista de animais e chame o método comer polimorficamente (com um for)
 
 class Zoo:
-    cavalo=''
-    comida=''
-    gato=''
-    cachorro=''
     def chama_para_comer(self):
         comida='o animal esta comendo...'
-    def animais(self):
-        cavalo='cavalo '
-        gato='gato '
-        cachorro='cachorro '
-    def animal_teste(self):
-        print(cavalo)
+
+class Cavalo():
+    def comida_cav(self):
+        print("o cavalo esta comendo feno")
+
+class Cachorro():
+    def comida_toto(self):
+        print("o cachorro esta comendo ração")
+
+class Gato():
+    def comida_gato(self):
+        print('o gato esta comendo peixe')
+
 
 chama=Zoo()
-chama.chama_para_comer()
-chama.animais()
-chama.animal_teste()
