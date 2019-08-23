@@ -7,19 +7,29 @@
 
 class Zoo:
     def chama_para_comer(self):
-        comida='o animal esta comendo...'
+        print('o animal esta comendo...')
 
-class Cavalo():
-    def comida_cav(self):
+class Cavalo(Zoo):
+    def chama_para_comer(self):
         print("o cavalo esta comendo feno")
 
-class Cachorro():
-    def comida_toto(self):
+
+class Cachorro(Zoo):
+    def chama_para_comer(self):
         print("o cachorro esta comendo ração")
 
-class Gato():
-    def comida_gato(self):
-        print('o gato esta comendo peixe')
+class Gato(Zoo):
+    def chama_para_comer(self):
+     print('o gato esta comendo peixe')
+
+class AnimalTeste():
+    lista_animais=[Gato(),Cavalo(),Cachorro()]
+    def animal_final(self):
+        for animal in self.lista_animais:
+            animal.chama_para_comer()
+
+animais=AnimalTeste()
+animais.animal_final()
 
 
-chama=Zoo()
+
