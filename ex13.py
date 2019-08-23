@@ -41,7 +41,7 @@ class Idade():
             Wnova = mulher1
 
         soma1=Midade+Wnova
-        soma2=Widade+Mnovo
+        soma2=Mnovo*Widade
         print("a soma das idades do homem mais velho com"
               "a mulher mais nova é: ",soma1)
         print("e o produto das idades do homem mais novo com "
