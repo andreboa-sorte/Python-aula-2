@@ -1,9 +1,6 @@
-class MadiaAluno():
-    #teste GIT
-    #git add
-    #git commit -m ''
-    #git push
-    def cacula_media(self):
+class MediaAluno():
+
+    def calcula_media(self):
 
             nota1=float(input("digite a primeira nota do aluno: "))
 
@@ -11,11 +8,16 @@ class MadiaAluno():
 
             nota3=float(input("digite a terceira nota do aluno: "))
 
-            media=((nota1+nota2+nota3)/3)
+            media = self.calculo_media(nota1, nota2, nota3)
 
             print("a media do aluno é: {0:.2f}".format(media))
 
-chama=MadiaAluno()
+    def calculo_media(self, nota1, nota2, nota3):
+        media = ((nota1 + nota2 + nota3) / 3)
+        return media
+
+'''
+chama=MediaAluno()
 
 situacao=True
 
@@ -24,12 +26,12 @@ while situacao:
                  "2- sair\n"
                  "opção: "))
     if op==1:
-        chama.cacula_media()
+        chama.calcula_media()
 
     if op==2:
         situacao=False
 
-
+'''
 
 
 
