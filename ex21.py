@@ -1,5 +1,4 @@
-'''21 - mostrando na tela o valor. Depois disso, crie uma classe de testes instanciando os objetos programador e analista e ch
-Crie uma classe chamada Ingresso que possui um valor em reais e um método
+'''21 -Crie uma classe chamada Ingresso que possui um valor em reais e um método
 imprimeValor().
 
 a. crie uma classe VIP, que herda Ingresso e possui um valor adicional. Crie um
