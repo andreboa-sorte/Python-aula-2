@@ -38,30 +38,36 @@ class BicicletaProfissional(Bicicleta):
 
 
 class Main():
-    menu=True
-    while menu:
-        op=int(input("1- ver bicicleta de passeio\n"
-                     "2- ver bicicreta profisional\n"
-                     "3- sair\n"
-                     "opção: "))
-        if op==1:
-            chama=BicicletaPasseio()
+       def execute(self):
+        menu=True
+        while menu:
+            op=int(input("1- ver bicicleta de passeio\n"
+                         "2- ver bicicreta profisional\n"
+                         "3- sair\n"
+                         "opção: "))
+            if op==1:
+                chama=BicicletaPasseio()
 
-            print("\nas especificações da bicicleta de passeio é: ")
+                print("\nas especificações da bicicleta de passeio é: ")
 
-            chama.marca()
-            chama.quantidade_marchas()
-            chama.tipo_freio()
+                chama.marca()
+                chama.quantidade_marchas()
+                chama.tipo_freio()
 
-        elif op==2:
-            chama=BicicletaProfissional()
+            elif op==2:
+                chama=BicicletaProfissional()
 
-            print("\nas especificações da bicicleta profissional é: ")
+                print("\nas especificações da bicicleta profissional é: ")
 
-            chama.marca()
-            chama.quantidade_marchas()
-            chama.tipo_freio()
+                chama.marca()
+                chama.quantidade_marchas()
+                chama.tipo_freio()
 
 
-        elif op==3:
-            menu=False
+            elif op==3:
+                menu=False
+
+
+aplicacao=Main()
+
+aplicacao.execute()
