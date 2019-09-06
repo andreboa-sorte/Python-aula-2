@@ -9,9 +9,12 @@ métodos de acesso e impressão para este desconto.
 
 class Imovel():
     def info_imovel(self):
-        endereco=""
-        preco=0.0
+        endereco=" SC-401, 9301 - Santo Antonio de Lisboa, Florianópolis - SC, 88050-001"
+        preco=2000000.0
 
 
 class NovoImovel(Imovel):
-    def info_imovel(self):
+    def info_novo_imovel(self,preco):
+        novo_preco=float(input("digite o preço adicional do novo imovel acima do preço de {0:.2f}: ".format(preco)))
+
+        novo_preco=novo_preco + preco
