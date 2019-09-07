@@ -26,7 +26,7 @@ class IngressoVip(Ingresso):
 
    # def ing_vip(self):
         valor_temp=float(input("digite o valor adiciona do camarote vip com relação "
-                               "ao ingresso normal {0:.2f}: ".format(valor_ingresso)))
+                               "ao ingresso normal {0:.2f} : ".format(valor_ingresso)))
 
         ingresso_vip = valor_temp + valor_ingresso
 
@@ -37,7 +37,7 @@ class IngressoNormal(Ingresso):
         valor_ingresso = 200.00
 
     #def ing_normal(self):
-        print("o preço do ingresso normal é de {0:.2f}",format(valor_ingresso))
+        print("o preço do ingresso normal é de {0:.2f}".format(valor_ingresso))
 
 
 class CamaroteInferior(Ingresso):
@@ -46,13 +46,13 @@ class CamaroteInferior(Ingresso):
 
    # def camarote_inf(self):
         preco_temp=float(input('digite o preço adicional do camarote inferior com '
-                               'relação ao preco normal de {0:.2f}: '.format(valor_ingresso)))
+                               'relação ao preco normal de {0:.2f} : '.format(valor_ingresso)))
 
         local_cam_inf=input("digite o local onde se solcaliza o camarote inferior: ")
 
         cama_inf=preco_temp + valor_ingresso
 
-        print("o preço do camarote inferior é de {0:.2f} e esta localizado {1}"
+        print("o preço do camarote inferior é de {0:.2f} e esta localizado: {1}"
               .format(cama_inf,local_cam_inf))
 
 class CamaroteSuperior(Ingresso):
@@ -61,26 +61,27 @@ class CamaroteSuperior(Ingresso):
 
     #def camarote_sup(self):
         preco_temp = float(input( 'digite o preço adicional do camarote superior com'
-                                  ' relação ao preco normal de {0:.2f}: '.format( valor_ingresso)))
+                                  ' relação ao preco normal de {0:.2f} : '.format( valor_ingresso)))
 
         local_cam_sup = input("digite o local onde se solcaliza o camarote superior: ")
 
         cama_sup = preco_temp + valor_ingresso
 
-        print("o preço do camarote superior é de {0:.2f} e esta localizado {1}"
+        print("o preço do camarote superior é de {0:.2f} e esta localizado: {1}"
               .format(cama_sup, local_cam_sup))
 
 
-op=int(input("1- para o preço do ingreso normal\n"
-             "2- para o preço do ingreso VIP\n"
-             "3- para o preço do ingreso do camarote inferior\n"
-             "4- para o preço do ingreso do camarote superior\n"
-             "5- para sair\n"
-             "opção: "))
+
 
 menu=True
 
 while menu:
+    op = int(input("1- para o preço do ingreso normal\n"
+                   "2- para o preço do ingreso VIP\n"
+                   "3- para o preço do ingreso do camarote inferior\n"
+                   "4- para o preço do ingreso do camarote superior\n"
+                   "5- para sair\n"
+                   "opção: "))
 
     if op==1:
         normal=IngressoNormal()
