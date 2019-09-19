@@ -24,16 +24,25 @@ while menu:
 
     elif op==2:
         aux=index/2
-        aux=index
         aux=round(aux)
+        clone=aux
 
         print("lista metade na frente:")
+        situacao=True
+        while situacao:
+            if clone<index:
+                print(listacomum[clone])
+                clone+=1
+            elif clone==index:
+                situacao=False
 
-        for aux in range(aux>=index):
-            print(listacomum[aux])
-
-        for i in range(i>aux):
-            print(listacomum[i])
+        situacao = True
+        while situacao:
+            if i<aux:
+                print(listacomum[i])
+                i+=1
+            elif i==aux:
+                situacao=False
 
     elif op==3:
         print(listacomum)
