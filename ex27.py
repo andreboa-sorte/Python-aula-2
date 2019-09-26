@@ -13,4 +13,19 @@ dicionario={0: ' ', 1: 'a', 2: 'b', 3: 'c', 4: 'd', 5: 'e', 6: 'f', 7: 'g', 8: '
             21: 'u', 22: 'v', 23: 'w', 24: 'x', 25: 'y', 26: 'z'}
 msg=[]
 
-num=int(input("digite a mensague a ser taduzida: "))
+situacao=True
+
+while situacao:
+    op=int(input("1- digitar o codigo\n"
+                 "2- sair\n"
+                 "opção: "))
+
+    if op==1:
+        num=int(input("digite a mensague a ser taduzida: "))
+        msg.append(num)
+
+    elif op==2:
+        situacao=False
+
+for i in range(len(msg)):
+    print(dicionario[msg[i]], end='')
